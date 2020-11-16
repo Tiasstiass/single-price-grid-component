@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 635px;
+  margin: 10em auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.top {
+  padding: 40px 40px;
+  border-radius: 8px 8px 0 0;
+  background-color: #ffff;
+}
+
+.top h3 {
+  color: hsl(71, 73%, 54%);
+}
+.top p {
+  color: hsl(218, 22%, 67%);
+}
+.row {
+  display: flex;
+}
+
+.bottom-left {
+  padding: 40px 40px;
+  border-radius: 0 0 0 8px;
+  background-color: hsl(179, 62%, 43%);
+  text-align: left;
+}
+
+.price-flex {
+  display: flex;
+  align-items: center;
+  color: hsl(204, 43%, 93%, 60%);
+}
+
+.price {
+  padding-right: 10px;
+}
+
+.price-access {
+  color: rgb(255, 255, 255, 70%);
+}
+
+.bottom-right {
+  padding: 40px 40px;
+  border-radius: 0 0 8px 0;
+  background-color: hsl(179, 62%, 43%, 70%);
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  padding-bottom: 24px;
+}
+
+h2 {
+  padding-bottom: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+
+h3 {
+  padding-bottom: 11px;
+  font-size: 17px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+span {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+}
+
+button {
+  height: 3.4em;
+  width: 100%;
+  margin-top: 22px;
+  border-radius: 5px;
+  border-style: hidden;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.1);
+  background-color: hsl(71, 73%, 54%);
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(255, 255, 255, 80%);
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: rgb(186, 214, 62);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 70%);
+  font-weight: 400;
+  font-size: 14px;
+  padding-right: 56px;
+}
+
+nav ul {
+  list-style: none;
+}
+nav ul li:hover {
+  background-color: hsl(71, 73%, 54%);
+}
+
+@media screen and (max-width: 650px) {
+  
+  .container {
+    max-width: 90%;
+    margin: 4.5em auto;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .top {
+    padding: 30px 30px;
+  }
+
+  .top p {
+    font-size: 15px;
+  }
+  
+  .top h3 {
+    padding-bottom: 20px;
+  }
+  
+  .bottom-left {
+    padding: 30px 30px;
+    border-radius: 0px;
+  }
+
+  .bottom-right {
+    padding: 30px 30px;
+    border-radius: 0 0 8px 8px;
+  }
+}
